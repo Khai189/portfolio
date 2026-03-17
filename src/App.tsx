@@ -2,17 +2,15 @@ import React from 'react'
 import { useState } from 'react'
 import { projects, skills, experiences, type Project, type Skill, type Experience } from './data'
 import profilePic from './assets/profilePic.jpeg'
+import ContactForm from './ContactForm'
+// @ts-ignore
 import { ToastContainer, toast } from 'react-toastify'
+// @ts-ignore
 import 'react-toastify/dist/ReactToastify.css'
 
 
 function App() {
   const [searchQuery, setSearchQuery] = useState('');
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission logic here
-    toast.success("Form submitted! (We'll need to connect this to an email service next)")
-  }
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 font-sans selection:bg-blue-200">
@@ -206,23 +204,7 @@ function App() {
           <h2 className="text-3xl font-bold mb-12">Get In Touch</h2>
           <p className="text-gray-600 mb-6">If you have any project proposals you'd like to reach out about, or just want to connect further, feel free to send a message!</p>
           
-          <form onSubmit={handleSubmit} className="max-w-xl mx-auto text-left space-y-6 mt-8">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">Name</label>
-              <input type="text" id="name" required className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all" placeholder="John Doe" />
-            </div>
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">Email</label>
-              <input type="email" id="email" required className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all" placeholder="john@example.com" />
-            </div>
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">Message</label>
-              <textarea id="message" required rows={5} className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all" placeholder="How can we work together?"></textarea>
-            </div>
-            <button type="submit" className="w-full bg-purple-600 text-white font-bold py-4 rounded-xl hover:bg-purple-700 transition-colors shadow-lg hover:shadow-xl active:scale-95">
-              Send Message
-            </button>
-          </form>
+          <ContactForm />
         </div>
       </footer>
 
