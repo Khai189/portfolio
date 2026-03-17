@@ -17,28 +17,30 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 font-sans selection:bg-blue-200">
       {/* Navigation */}
-      <nav className="flex justify-between items-center p-6 max-w-5xl mx-auto">
-        <div className="flex items-center gap-6">
-          <div className="text-xl font-bold tracking-tighter">
-            <a href="#about" className="inline-block pr-1 pb-1 hover:text-blue-600 transition-colors">Khai</a>
+      <div className="sticky top-0 z-50 bg-gray-50/90 backdrop-blur-md border-b border-gray-200/50">
+        <nav className="flex justify-between items-center p-6 max-w-5xl mx-auto">
+          <div className="flex items-center gap-6">
+            <div className="text-xl font-bold tracking-tighter">
+              <a href="#" className="inline-block pr-1 pb-1 hover:text-blue-600 transition-colors">Khai</a>
+            </div>
+            <div className="flex items-center gap-4 text-gray-600">
+              <a href="https://github.com/Khai189" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform" aria-label="GitHub">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" className="w-6 h-6" />
+              </a>
+              <a href="https://www.linkedin.com/in/khaihmohammad/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform" aria-label="LinkedIn">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="LinkedIn" className="w-6 h-6" />
+              </a>
+            </div>
           </div>
-          <div className="flex items-center gap-4 text-gray-600">
-            <a href="https://github.com/Khai189" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform" aria-label="GitHub">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" className="w-6 h-6" />
-            </a>
-            <a href="https://www.linkedin.com/in/khaihmohammad/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform" aria-label="LinkedIn">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="LinkedIn" className="w-6 h-6" />
-            </a>
+          <div className="space-x-6 text-sm font-medium text-gray-600">
+            <a href="#about" className="hover:text-blue-600 transition-colors">About</a>
+            <a href="#skills" className="hover:text-blue-600 transition-colors">Skills</a>
+            <a href="#experience" className="hover:text-blue-600 transition-colors">Experience</a>
+            <a href="#projects" className="hover:text-blue-600 transition-colors">Projects</a>
+            <a href="#contact" className="hover:text-blue-600 transition-colors">Contact</a>
           </div>
-        </div>
-        <div className="space-x-6 text-sm font-medium text-gray-600">
-          <a href="#about" className="hover:text-blue-600 transition-colors">About</a>
-          <a href="#skills" className="hover:text-blue-600 transition-colors">Skills</a>
-          <a href="#experience" className="hover:text-blue-600 transition-colors">Experience</a>
-          <a href="#projects" className="hover:text-blue-600 transition-colors">Projects</a>
-          <a href="#contact" className="hover:text-blue-600 transition-colors">Contact</a>
-        </div>
-      </nav>
+        </nav>
+      </div>
 
       {/* Hero Section */}
       <header className="flex flex-col items-center justify-center py-32 px-6 max-w-5xl mx-auto">
@@ -50,7 +52,7 @@ function App() {
               <span className="text-purple-600">use.</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-600 max-w-2xl leading-relaxed mx-auto md:mx-0">
-              I'm Khai, a product engineer who makes and designs full-stack web/mobile applications.
+              I'm Khai, a product engineer who makes and designs accessible and easy-to-use full-stack web/mobile applications.
             </p>
           </div>
           <div className="flex-1 flex justify-center md:justify-end">
@@ -63,7 +65,7 @@ function App() {
         </a>
       </header>
 
-      <section id="about" className="py-24 bg-gray-100">
+      <section id="about" className="py-24 bg-gray-100 scroll-mt-20">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl font-bold mb-12 text-center md:text-left">About Me</h2>
           
@@ -104,7 +106,7 @@ function App() {
         </div>
       </section>
 
-      <section id="skills" className="py-24 bg-white">
+      <section id="skills" className="py-24 bg-white scroll-mt-20">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl font-bold mb-12">Skills & Technologies</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -127,7 +129,7 @@ function App() {
         </div>
       </section>
 
-      <section id="experience" className="py-24 bg-gray-100">
+      <section id="experience" className="py-24 bg-gray-100 scroll-mt-20">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl font-bold mb-16 text-center">Work Experience</h2>
           <div className="max-w-3xl mx-auto">
@@ -151,7 +153,7 @@ function App() {
         </div>
       </section>
 
-      <main id="projects" className="py-24 bg-white">
+      <main id="projects" className="py-24 bg-white scroll-mt-20">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl font-bold mb-12">Featured Projects</h2>
           <div className="mb-12">
@@ -199,7 +201,7 @@ function App() {
       </main>
 
       {/* Contact Section Placeholder */}
-      <footer id="contact" className="py-24 bg-gray-100">
+      <footer id="contact" className="py-24 bg-gray-100 scroll-mt-20">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-12">Get In Touch</h2>
           <p className="text-gray-600 mb-6">If you have any project proposals you'd like to reach out about, or just want to connect further, feel free to send a message!</p>
