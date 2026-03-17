@@ -202,7 +202,7 @@ function App() {
       <footer id="contact" className="py-24 bg-gray-100">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-12">Get In Touch</h2>
-          <p className="text-gray-600 mb-6">I'm currently open to new opportunities and collaborations. Whether you have a question, want to work together, or just want to say hi, feel free to reach out!</p>
+          <p className="text-gray-600 mb-6">If you have any project proposals you'd like to reach out about, or just want to connect further, feel free to send a message!</p>
           
           <form onSubmit={handleSubmit} className="max-w-xl mx-auto text-left space-y-6 mt-8">
             <div>
