@@ -10,6 +10,7 @@ interface Project {
     image?: string;
     link: string;
     inProgress?: boolean;
+    isPlaceholder?: boolean;
 }
 
 interface Skill {
@@ -50,7 +51,7 @@ const rawProjects: Project[] = [
     {
         title: "Faculty Research Project",
         description: "Building a Faculty Research Site where faculty members can post their research online for student RAs and can easily set requirements and research goals, as well as publish their own research.",
-        techStack: ["Next.js", "TailwindCSS", "React.js","TypeScript","Figma", "Spring Boot", "Java", "PostgreSQL"],
+        techStack: ["Next.js", "Tailwind CSS", "React.js","TypeScript","Figma", "Spring Boot", "Java", "PostgreSQL"],
         link: "https://github.com/Khai189/facultyResearchWebsite",
         inProgress: true,
     },
@@ -59,6 +60,7 @@ const rawProjects: Project[] = [
 export const projects: Project[] = rawProjects.map(project => {
     if (!project.image) {
         project.image = placeholders[placeholderIndex % placeholders.length];
+        project.isPlaceholder = true;
         placeholderIndex++;
     }
     return project;

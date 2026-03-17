@@ -178,7 +178,7 @@ function App() {
               .map((item: Project) => (
               <a href={item.link} target="_blank" rel="noopener noreferrer" key={item.title} className="group block bg-white rounded-2xl overflow-hidden border-2 border-gray-900 shadow-[8px_8px_0_0_#111827] hover:shadow-[12px_12px_0_0_#111827] hover:-translate-y-1 hover:-translate-x-1 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-600 focus-visible:ring-offset-2">
                 <div className="h-64 w-full overflow-hidden border-b-2 border-gray-900 bg-gray-900 relative">
-                  <img src={item.image || "https://placehold.co/800x400?text=Project+Screenshot"} alt={`${item.title} screenshot`} className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 transform-gpu" />
+                  <img src={item.image || "https://placehold.co/800x400?text=Project+Screenshot"} alt={`${item.title} screenshot`} className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 transform-gpu ${item.isPlaceholder ? 'object-center' : 'object-left-top'}`} />
                   {item.inProgress && (
                     <div className="absolute top-4 right-4 bg-yellow-400 text-yellow-900 text-xs font-bold px-3 py-1 rounded-full shadow-md">
                       In Progress
