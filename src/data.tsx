@@ -48,10 +48,10 @@ const rawProjects: Project[] = [
         link: "https://khai-spotify-recommender.streamlit.app/",
     },
     {
-        title: "Project 3",
-        description: "This is a description of Project 3. It highlights my experience with full-stack development and database management.",
-        techStack: ["Python", "Django", "PostgreSQL"],
-        link: "https://example.com",
+        title: "Faculty Research Project",
+        description: "Building a Faculty Research Site where faculty members can post their research online for student RAs and can easily set requirements and research goals, as well as publish their own research.",
+        techStack: ["Next.js", "TailwindCSS", "React.js","TypeScript", "Spring Boot", "Java", "PostgreSQL"],
+        link: "https://github.com/Khai189/facultyResearchWebsite",
         inProgress: true,
     },
 ];
