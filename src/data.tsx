@@ -36,7 +36,7 @@ const rawProjects: Project[] = [
     {
         title: "CoffeeMixer",
         description: "CoffeeMixer allows users to find and create the best coffee recipes and share it to their feed, with an AI barista who can help find recipes and nearby coffee shops with those drinks.",
-        techStack: ["React", "Prisma", "Node.js", "TypeScript","Express", "Tailwind CSS", "PostgreSQL", "n8n", "LangChain","Docker"],
+        techStack: ["React", "Prisma", "Node.js", "TypeScript","Express", "Figma","Tailwind CSS", "PostgreSQL", "n8n", "LangChain","Docker"],
         image: coffeeMixerImg,
         link: "https://coffeemixer.net/",
     },
@@ -50,7 +50,7 @@ const rawProjects: Project[] = [
     {
         title: "Faculty Research Project",
         description: "Building a Faculty Research Site where faculty members can post their research online for student RAs and can easily set requirements and research goals, as well as publish their own research.",
-        techStack: ["Next.js", "TailwindCSS", "React.js","TypeScript", "Spring Boot", "Java", "PostgreSQL"],
+        techStack: ["Next.js", "TailwindCSS", "React.js","TypeScript","Figma", "Spring Boot", "Java", "PostgreSQL"],
         link: "https://github.com/Khai189/facultyResearchWebsite",
         inProgress: true,
     },
