@@ -6,10 +6,12 @@ import ContactForm from './ContactForm'
 import { ToastContainer, toast } from 'react-toastify'
 // @ts-ignore
 import 'react-toastify/dist/ReactToastify.css'
+import { Menu, X } from 'lucide-react'
 
 
 function App() {
   const [searchQuery, setSearchQuery] = useState('');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 font-sans selection:bg-blue-200">
@@ -29,14 +31,35 @@ function App() {
               </a>
             </div>
           </div>
-          <div className="space-x-6 text-sm font-medium text-gray-600">
+
+        {/* Desktop Menu */}
+        <div className="hidden md:block space-x-6 text-sm font-medium text-gray-600">
             <a href="#about" className="hover:text-blue-600 transition-colors">About</a>
             <a href="#skills" className="hover:text-blue-600 transition-colors">Skills</a>
             <a href="#experience" className="hover:text-blue-600 transition-colors">Experience</a>
             <a href="#projects" className="hover:text-blue-600 transition-colors">Projects</a>
             <a href="#contact" className="hover:text-blue-600 transition-colors">Contact</a>
           </div>
+
+        {/* Mobile Menu Button */}
+        <button 
+          className="block md:hidden text-gray-600 hover:text-blue-600 transition-colors"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
         </nav>
+
+      {/* Mobile Dropdown Menu */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden absolute top-full left-0 w-full bg-gray-50/95 backdrop-blur-md border-b border-gray-200/50 shadow-lg flex flex-col px-6 py-4 space-y-4 text-sm font-medium text-gray-600">
+          <a href="#about" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 transition-colors">About</a>
+          <a href="#skills" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 transition-colors">Skills</a>
+          <a href="#experience" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 transition-colors">Experience</a>
+          <a href="#projects" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 transition-colors">Projects</a>
+          <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 transition-colors">Contact</a>
+        </div>
+      )}
       </div>
 
       {/* Hero Section */}
