@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState } from 'react'
 import { projects, skills, experiences, type Project, type Skill, type Experience } from './data'
 import profilePic from './assets/profilePic.jpeg'
