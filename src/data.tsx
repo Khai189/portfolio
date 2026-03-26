@@ -61,7 +61,7 @@ const rawProjects: Project[] = [
         description: "A Three.js visualization of a DNA structure. Build this 3D visualization as part of a class project.",
         image: dnaVisualizationImg,
         techStack: ["JavaScript", "Three.js", "HTML", "CSS"],
-        link: "https://github.com/Khai189/dna-visualization",
+        link: "https://dnavis.up.railway.app/",
     }
 ];
 
