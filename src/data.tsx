@@ -62,6 +62,13 @@ const rawProjects: Project[] = [
         image: dnaVisualizationImg,
         techStack: ["JavaScript", "Three.js", "HTML", "CSS"],
         link: "https://dnavis.up.railway.app/",
+    },
+    {
+        title: "InstaSchedule AI",
+        description: "An AI-powered scheduling assistant that helps users manage their time. Users can input easy statements like 'm-f 9-5 work, t-th 10-11 class' and the AI will automatically generate a schedule for them.",
+        techStack: ["Swift", "SwiftUI", "Python", "FastAPI", "PostgreSQL", "Docker","AWS","LangChain","n8n"],
+        link: "https://github.com/Khai189",
+        inProgress: true,
     }
 ];
 
@@ -75,6 +82,18 @@ export const projects: Project[] = rawProjects.map(project => {
 });
 
 export const skills: Skill[] = [
+    {
+        name: "React Native",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+    },
+    {
+        name: "Swift",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg",
+    },
+    {
+        name: "Kotlin",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg",
+    },
     {
         name: "Next.js",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
@@ -100,16 +119,16 @@ export const skills: Skill[] = [
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original.svg",
     },
     {
-        name: "Figma",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
-    },
-    {
         name: "Node.js",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
     },
     {
         name: "Tailwind CSS",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    },
+    {
+        name: "Figma",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
     },
     {
         name: "Spring Boot",
@@ -130,10 +149,6 @@ export const skills: Skill[] = [
     {
         name: "Python",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-    },
-    {
-        name: "GraphQL",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg",
     },
     {
         name: "Docker",
