@@ -1,5 +1,6 @@
 import coffeeMixerImg from './assets/CoffeeMixer.png';
 import spotifyRecommenderImg from './assets/SpotifyRecommender.png';
+import dnaVisualizationImg from './assets/dnavis.png';
 import placeHolder1 from './assets/placeHolder1.jpg';
 import placeHolder2 from './assets/placeHolder2.jpg';
 
@@ -55,6 +56,13 @@ const rawProjects: Project[] = [
         link: "https://github.com/Khai189/facultyResearchWebsite",
         inProgress: true,
     },
+    {
+        title: "DNA Visualization Project",
+        description: "A Three.js visualization of a DNA structure. Build this 3D visualization as part of a class project.",
+        image: dnaVisualizationImg,
+        techStack: ["JavaScript", "Three.js", "HTML", "CSS"],
+        link: "https://github.com/Khai189/dna-visualization",
+    }
 ];
 
 export const projects: Project[] = rawProjects.map(project => {
@@ -78,6 +86,18 @@ export const skills: Skill[] = [
     {
         name: "TypeScript",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+    },
+    {
+        name: "JavaScript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+    },
+    {
+        name: "Express",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+    },
+    {
+        name: "Three.js",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original.svg",
     },
     {
         name: "Figma",
