@@ -53,7 +53,7 @@ const rawProjects: Project[] = [
         title: "Faculty Research Project",
         description: "Building a Faculty Research Site where faculty members can post their research online for student RAs and can easily set requirements and research goals, as well as publish their own research.",
         techStack: ["Next.js", "Tailwind CSS", "React.js","TypeScript","Figma", "Spring Boot", "Java", "PostgreSQL"],
-        link: "https://github.com/Khai189/facultyResearchWebsite",
+        link: "https://www.5cresearch.com/",
         inProgress: true,
     },
     {
@@ -83,16 +83,8 @@ export const projects: Project[] = rawProjects.map(project => {
 
 export const skills: Skill[] = [
     {
-        name: "React Native",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-    },
-    {
         name: "Swift",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg",
-    },
-    {
-        name: "Kotlin",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg",
     },
     {
         name: "Next.js",
@@ -158,16 +150,7 @@ export const skills: Skill[] = [
         name: "Amazon Web Services",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
         searchTerm: "AWS",
-    },
-    {
-        name: "n8n",
-        icon: "https://cdn.simpleicons.org/n8n",
-    },
-    {
-        name: "LangChain",
-        icon: "https://cdn.simpleicons.org/langchain",
     }
-    
 ]
 
 export const experiences: Experience[] = [
