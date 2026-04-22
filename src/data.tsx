@@ -1,9 +1,9 @@
 import coffeeMixerImg from './assets/CoffeeMixer.png';
 import spotifyRecommenderImg from './assets/SpotifyRecommender.png';
 import dnaVisualizationImg from './assets/dnavis.png';
+import anyoneCanWorkoutImg from './assets/AnyoneCanWorkout.png';
 import placeHolder1 from './assets/placeHolder1.jpg';
 import placeHolder2 from './assets/placeHolder2.jpg';
-
 interface Project {
     title: string;
     description: string;
@@ -35,6 +35,13 @@ const placeholders = [placeHolder1, placeHolder2];
 let placeholderIndex = 0;
 
 const rawProjects: Project[] = [
+    {
+        title: "AnyoneCanWorkout",
+        description: "AnyoneCanWorkout allows non-able bodied users to find workouts meant for their specific needs and abilities, making long term plans with reminders notifications and tracking",
+        techStack: ["Next.js", "Tailwind CSS", "React.js","TypeScript","Figma", "Spring Boot", "Java", "PostgreSQL"],
+        link: "https://anyonecanworkout.com",
+        image: anyoneCanWorkoutImg,
+    },
     {
         title: "CoffeeMixer",
         description: "CoffeeMixer allows users to find and create the best coffee recipes and share it to their feed, with an AI barista who can help find recipes and nearby coffee shops with those drinks.",
