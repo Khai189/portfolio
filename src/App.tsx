@@ -67,12 +67,12 @@ function App() {
         <div className="flex flex-col-reverse md:flex-row items-center justify-between w-full gap-12 mb-12">
           <div className="flex-1 text-center md:text-left md:pl-8 lg:pl-12">
             <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
-              Making products <span className="text-purple-600">people </span>
-              actually <br />
-              <span className="text-purple-600">use.</span>
+              Building backend systems <span className="text-blue-600">that </span>
+              stay <br />
+              <span className="text-blue-600">fast.</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-600 max-w-2xl leading-relaxed mx-auto md:mx-0">
-              I'm Khai, a product engineer who makes and designs accessible and easy-to-use full-stack web/mobile applications.
+              I'm Khai, a backend software developer focused on distributed systems, high-throughput APIs, data pipelines, caching, and cloud infrastructure.
             </p>
           </div>
           <div className="flex-1 flex justify-center md:justify-end">
@@ -80,8 +80,8 @@ function App() {
           </div>
         </div>
         
-        <a href="#projects" className="inline-block bg-purple-600 text-white px-8 py-4 rounded-xl font-bold text-lg border-2 border-gray-900 shadow-[6px_6px_0_0_#111827] hover:shadow-[3px_3px_0_0_#111827] hover:translate-y-[3px] hover:translate-x-[3px] active:shadow-none active:translate-y-[6px] active:translate-x-[6px] transition-all">
-          View My Work
+        <a href="#projects" className="inline-block bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg border-2 border-gray-900 shadow-[6px_6px_0_0_#111827] hover:shadow-[3px_3px_0_0_#111827] hover:translate-y-[3px] hover:translate-x-[3px] active:shadow-none active:translate-y-[6px] active:translate-x-[6px] transition-all">
+          View Backend Projects
         </a>
       </header>
 
@@ -93,33 +93,38 @@ function App() {
             {/* Left Column: Text Content */}
             <div className="flex-1 space-y-6 text-lg text-gray-700 leading-relaxed">
               <p>
-                Hi! I'm Khai, a Pomona College student and full-stack product engineer who develops and designs web and mobile applications.
+                Hi! I'm Khai, a Pomona College computer science student building backend systems that handle real traffic, large datasets, and reliability constraints.
               </p>
               <p>
-                I specialize in building and designing multi-user social applications, ensuring everything I build is visually appealing and easy-to-use. I specifically focus on <b>accessibility</b> where I make disability-centered technology that puts disability first.
+                My work centers on <b>distributed systems</b>, API design, database indexing, ETL pipelines, message queues, and cache-aware service architecture with Go, Java, Spring Boot, Kafka, Spark, Redis, and PostgreSQL.
               </p>
               <p>
-
+                I like turning performance bottlenecks into concrete infrastructure improvements: lower latency, cleaner service boundaries, safer deployments, and systems that keep working when traffic gets messy.
               </p>
             </div>
 
-            {/* Right Column: Animated Coding SVG */}
+            {/* Right Column: Animated backend topology */}
             <div className="flex-1 w-full max-w-md flex justify-center">
               <svg viewBox="0 0 500 400" className="w-full h-auto drop-shadow-[8px_8px_0_rgba(17,24,39,1)] rounded-2xl" xmlns="http://www.w3.org/2000/svg">
-                {/* Terminal Window Background */}
-                <rect x="0" y="0" width="500" height="400" rx="20" fill="#1e1e2e" />
-                {/* Mac-style Window Controls */}
-                <circle cx="30" cy="30" r="10" fill="#ff5f56" />
-                <circle cx="65" cy="30" r="10" fill="#ffbd2e" />
-                <circle cx="100" cy="30" r="10" fill="#27c93f" />
-                
-                {/* Simulated Code Lines with Pulse Animation */}
-                <rect x="30" y="80" width="200" height="15" rx="5" fill="#a6accd" className="animate-pulse" />
-                <rect x="30" y="115" width="300" height="15" rx="5" fill="#89ddff" className="animate-pulse" style={{ animationDelay: '200ms' }} />
-                <rect x="30" y="150" width="150" height="15" rx="5" fill="#c792ea" className="animate-pulse" style={{ animationDelay: '400ms' }} />
-                <rect x="60" y="185" width="250" height="15" rx="5" fill="#c3e88d" className="animate-pulse" style={{ animationDelay: '600ms' }} />
-                <rect x="60" y="220" width="180" height="15" rx="5" fill="#f07178" className="animate-pulse" style={{ animationDelay: '800ms' }} />
-                <rect x="30" y="255" width="120" height="15" rx="5" fill="#82aaff" className="animate-pulse" style={{ animationDelay: '1000ms' }} />
+                <rect x="0" y="0" width="500" height="400" rx="20" fill="#0f172a" />
+                <path d="M118 132H244M118 268H244M294 132H382M294 268H382M254 158V242" stroke="#60a5fa" strokeWidth="8" strokeLinecap="round" strokeDasharray="18 16" className="animate-pulse" />
+                <rect x="44" y="94" width="120" height="76" rx="14" fill="#dbeafe" stroke="#111827" strokeWidth="4" />
+                <rect x="44" y="230" width="120" height="76" rx="14" fill="#dcfce7" stroke="#111827" strokeWidth="4" />
+                <rect x="216" y="150" width="116" height="100" rx="16" fill="#fef3c7" stroke="#111827" strokeWidth="4" />
+                <rect x="370" y="94" width="88" height="76" rx="14" fill="#ede9fe" stroke="#111827" strokeWidth="4" />
+                <rect x="370" y="230" width="88" height="76" rx="14" fill="#fee2e2" stroke="#111827" strokeWidth="4" />
+                <text x="104" y="126" textAnchor="middle" fontSize="16" fontWeight="700" fill="#111827">API</text>
+                <text x="104" y="148" textAnchor="middle" fontSize="12" fill="#1f2937">GraphQL</text>
+                <text x="104" y="262" textAnchor="middle" fontSize="16" fontWeight="700" fill="#111827">ETL</text>
+                <text x="104" y="284" textAnchor="middle" fontSize="12" fill="#1f2937">Spark</text>
+                <text x="274" y="196" textAnchor="middle" fontSize="17" fontWeight="700" fill="#111827">Kafka</text>
+                <text x="274" y="220" textAnchor="middle" fontSize="12" fill="#1f2937">workers</text>
+                <text x="414" y="126" textAnchor="middle" fontSize="16" fontWeight="700" fill="#111827">Redis</text>
+                <text x="414" y="148" textAnchor="middle" fontSize="12" fill="#1f2937">cache</text>
+                <text x="414" y="262" textAnchor="middle" fontSize="16" fontWeight="700" fill="#111827">DB</text>
+                <text x="414" y="284" textAnchor="middle" fontSize="12" fill="#1f2937">indexed</text>
+                <circle cx="244" cy="132" r="8" fill="#38bdf8" className="animate-ping" />
+                <circle cx="294" cy="268" r="8" fill="#34d399" className="animate-ping" style={{ animationDelay: '600ms' }} />
               </svg>
             </div>
           </div>
@@ -137,7 +142,7 @@ function App() {
                   setSearchQuery(skill.searchTerm || skill.name);
                   document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
                 }}
-                className="group flex flex-col items-center bg-gray-100 rounded-xl p-6 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-600"
+                className="group flex flex-col items-center bg-gray-100 rounded-xl p-6 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
               >
                 <div className="h-16 w-16 mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <img src={skill.icon} alt={`${skill.name} icon`} className="max-h-full max-w-full" />
@@ -157,7 +162,7 @@ function App() {
               <div key={index} className="relative pl-8 sm:pl-12 pb-12 last:pb-0">
                 {/* Dot and Line */}
                 <div className={`absolute left-[7px] w-px h-full bg-gray-300 ${index === 0 ? 'top-1' : 'top-0'}`}></div>
-                <div className="absolute left-0 top-1 w-4 h-4 bg-purple-600 rounded-full border-4 border-gray-100"></div>
+                <div className="absolute left-0 top-1 w-4 h-4 bg-blue-600 rounded-full border-4 border-gray-100"></div>
 
                 <p className="text-sm text-gray-500 mb-1">{job.date}</p>
                 <h3 className="font-bold text-xl">{job.title}</h3>
@@ -181,8 +186,8 @@ function App() {
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search by title, description, or tech..."
-              className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all"
+              placeholder="Search backend systems, databases, queues, or tech..."
+              className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
             />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -196,7 +201,7 @@ function App() {
                 );
               })
               .map((item: Project) => (
-              <a href={item.link} target="_blank" rel="noopener noreferrer" key={item.title} className="group block bg-white rounded-2xl overflow-hidden border-2 border-gray-900 shadow-[8px_8px_0_0_#111827] hover:shadow-[12px_12px_0_0_#111827] hover:-translate-y-1 hover:-translate-x-1 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-600 focus-visible:ring-offset-2">
+              <a href={item.link} target="_blank" rel="noopener noreferrer" key={item.title} className="group block bg-white rounded-2xl overflow-hidden border-2 border-gray-900 shadow-[8px_8px_0_0_#111827] hover:shadow-[12px_12px_0_0_#111827] hover:-translate-y-1 hover:-translate-x-1 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2">
                 <div className="h-64 w-full overflow-hidden border-b-2 border-gray-900 bg-gray-900 relative">
                   <img src={item.image || "https://placehold.co/800x400?text=Project+Screenshot"} alt={`${item.title} screenshot`} className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 transform-gpu ${item.isPlaceholder ? 'object-center' : 'object-left-top'}`} />
                   {item.inProgress && (

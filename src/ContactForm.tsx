@@ -39,18 +39,18 @@ export default function ContactForm() {
     <form onSubmit={onSubmit} className="max-w-xl mx-auto text-left space-y-6 mt-8">
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">Name</label>
-        <input type="text" name="name" id="name" required className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all" placeholder="John Doe" />
+        <input type="text" name="name" id="name" required className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all" placeholder="John Doe" />
       </div>
       <div>
         <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">Email</label>
-        <input type="email" name="email" id="email" required className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all" placeholder="john@example.com" />
+        <input type="email" name="email" id="email" required className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all" placeholder="john@example.com" />
       </div>
       <div>
         <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">Message</label>
-        <textarea name="message" id="message" required rows={5} className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-all" placeholder="How can we work together?"></textarea>
+        <textarea name="message" id="message" required rows={5} className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all" placeholder="How can we work together?"></textarea>
       </div>
       
-      <button type="submit" disabled={isSubmitting} className="w-full bg-purple-600 text-white font-bold py-4 rounded-xl hover:bg-purple-700 transition-colors shadow-lg hover:shadow-xl active:scale-95 disabled:opacity-70 disabled:cursor-not-allowed">
+      <button type="submit" disabled={isSubmitting} className="w-full bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl active:scale-95 disabled:opacity-70 disabled:cursor-not-allowed">
         {isSubmitting ? "Sending..." : "Send Message"}
       </button>
     </form>

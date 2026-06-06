@@ -1,6 +1,5 @@
 import coffeeMixerImg from './assets/CoffeeMixer.png';
 import spotifyRecommenderImg from './assets/SpotifyRecommender.png';
-import dnaVisualizationImg from './assets/dnavis.png';
 import anyoneCanWorkoutImg from './assets/AnyoneCanWorkout.png';
 import placeHolder1 from './assets/placeHolder1.jpg';
 import placeHolder2 from './assets/placeHolder2.jpg';
@@ -36,46 +35,44 @@ let placeholderIndex = 0;
 
 const rawProjects: Project[] = [
     {
-        title: "AnyoneCanWorkout",
-        description: "AnyoneCanWorkout allows non-able bodied users to find workouts meant for their specific needs and abilities, making long term plans with reminders notifications and tracking",
-        techStack: ["Next.js", "Tailwind CSS", "React.js","TypeScript","Figma", "Spring Boot", "Java", "PostgreSQL"],
-        link: "https://anyonecanworkout.com",
-        image: anyoneCanWorkoutImg,
+        title: "GoVR Combat AI",
+        description: "Distributed Go simulation engine built around goroutines, worker pools, Kafka message queues, and Kubernetes orchestration to process 10,000 concurrent game events with sub-50ms decision latency.",
+        techStack: ["Go", "Kafka", "Kubernetes", "Apache Spark", "PyTorch"],
+        link: "https://github.com/Khai189",
+        inProgress: true,
     },
     {
-        title: "CoffeeMixer",
-        description: "CoffeeMixer allows users to find and create the best coffee recipes and share it to their feed, with an AI barista who can help find recipes and nearby coffee shops with those drinks.",
-        techStack: ["React", "Prisma", "Node.js", "TypeScript","Express", "Figma","Tailwind CSS", "PostgreSQL", "n8n", "LangChain","Docker"],
-        image: coffeeMixerImg,
-        link: "https://coffeemixer.net/",
+        title: "ChessAnalyzer",
+        description: "Distributed chess data platform that streams and processes more than 30GB of compressed data across 10 million games using Spark, PySpark, and MapReduce-backed analytics jobs.",
+        techStack: ["Apache Spark", "PySpark", "MapReduce", "Python", "NumPy", "Pandas", "Next.js", "D3.js"],
+        link: "https://chess-vis-frontend.vercel.app/",
     },
     {
-        title: "Spotify Recommender",
-        description: "Spotify recommender that uses song harmonics and melodies to recommend songs based on tuning, rhythm, melody, and more, where users can instantly queue and search their songs. The app uses an ML model to extract the similarities and uses a pgvector search to find the best songs available.",
-        techStack: ["Python", "FastAPI", "PostgreSQL", "Docker","AWS"],
+        title: "5CResearch",
+        description: "Secure academic research platform with Spring Boot and GraphQL services, JWT authentication, PostgreSQL-backed lab data, and a graph-based recommendation engine for matching students with faculty labs.",
+        techStack: ["Spring Boot", "GraphQL", "Java", "PostgreSQL", "JWT", "TypeScript", "Next.js"],
+        link: "https://www.5cresearch.com/",
+    },
+    {
+        title: "Spotify Recommender Backend",
+        description: "Recommendation API that extracts audio similarity features and uses PostgreSQL pgvector search to retrieve nearby songs for queueing and discovery workflows.",
+        techStack: ["Python", "FastAPI", "PostgreSQL", "pgvector", "Docker", "AWS"],
         image: spotifyRecommenderImg,
         link: "https://khai-spotify-recommender.streamlit.app/",
     },
     {
-        title: "Faculty Research Project",
-        description: "Building a Faculty Research Site where faculty members can post their research online for student RAs and can easily set requirements and research goals, as well as publish their own research.",
-        techStack: ["Next.js", "Tailwind CSS", "React.js","TypeScript","Figma", "Spring Boot", "Java", "PostgreSQL"],
-        link: "https://www.5cresearch.com/",
-        inProgress: true,
+        title: "CoffeeMixer Service Layer",
+        description: "Backend-heavy recipe platform using Express, Prisma, PostgreSQL, Docker, and LangChain/n8n workflows to coordinate recipe generation, user feeds, and location-aware coffee search.",
+        techStack: ["Node.js", "Express", "TypeScript", "Prisma", "PostgreSQL", "Docker", "LangChain", "n8n"],
+        image: coffeeMixerImg,
+        link: "https://coffeemixer.net/",
     },
     {
-        title: "DNA Visualization Project",
-        description: "A Three.js visualization of a DNA structure. Build this 3D visualization as part of a class project.",
-        image: dnaVisualizationImg,
-        techStack: ["JavaScript", "Three.js", "HTML", "CSS"],
-        link: "https://dnavis.up.railway.app/",
-    },
-    {
-        title: "InstaSchedule AI",
-        description: "An AI-powered scheduling assistant that helps users manage their time. Users can input easy statements like 'm-f 9-5 work, t-th 10-11 class' and the AI will automatically generate a schedule for them.",
-        techStack: ["Swift", "SwiftUI", "Python", "FastAPI", "PostgreSQL", "Docker","AWS","LangChain","n8n"],
-        link: "https://github.com/Khai189",
-        inProgress: true,
+        title: "AnyoneCanWorkout API Platform",
+        description: "Spring Boot and PostgreSQL application backend for adaptive workout planning, reminder scheduling, user progress tracking, and accessible fitness data workflows.",
+        techStack: ["Spring Boot", "Java", "PostgreSQL", "TypeScript", "Next.js"],
+        link: "https://anyonecanworkout.com",
+        image: anyoneCanWorkoutImg,
     }
 ];
 
@@ -90,120 +87,130 @@ export const projects: Project[] = rawProjects.map(project => {
 
 export const skills: Skill[] = [
     {
-        name: "Swift",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg",
-    },
-    {
-        name: "Next.js",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-    },
-    {
-        name: "React",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-    },
-    {
-        name: "TypeScript",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-    },
-    {
-        name: "JavaScript",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-    },
-    {
-        name: "Express",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
-    },
-    {
-        name: "Three.js",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original.svg",
-    },
-    {
-        name: "Node.js",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
-    },
-    {
-        name: "Tailwind CSS",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-    },
-    {
-        name: "Figma",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
-    },
-    {
-        name: "Spring Boot",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg",
+        name: "Go",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg",
     },
     {
         name: "Java",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
     },
     {
-        name: "PostgreSQL",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+        name: "Spring Boot",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg",
     },
     {
-        name: "FastAPI",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-plain.svg",
+        name: "Kafka",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachekafka/apachekafka-original.svg",
+        searchTerm: "Kafka",
     },
     {
-        name: "Python",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+        name: "Apache Spark",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apachespark/apachespark-original.svg",
+        searchTerm: "Spark",
+    },
+    {
+        name: "Kubernetes",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg",
     },
     {
         name: "Docker",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
     },
     {
-        name: "Amazon Web Services",
+        name: "PostgreSQL",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+    },
+    {
+        name: "Redis",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg",
+    },
+    {
+        name: "MongoDB",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+    },
+    {
+        name: "CockroachDB",
+        icon: "https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/cockroachlabs.svg",
+    },
+    {
+        name: "GraphQL",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg",
+    },
+    {
+        name: "TypeScript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+    },
+    {
+        name: "Express",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+    },
+    {
+        name: "Python",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+    },
+    {
+        name: "FastAPI",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-plain.svg",
+    },
+    {
+        name: "AWS",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
-        searchTerm: "AWS",
+    },
+    {
+        name: "Google Cloud",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg",
+        searchTerm: "GCP",
     }
 ]
 
 export const experiences: Experience[] = [
     {
-        date: "Feb 2026 - Present",
-        title: "Full-Stack Developer Intern",
-        company: "Axentra OS",
+        date: "May 2026 - Present",
+        title: "Software Engineer Intern",
+        company: "Nordic Analytics",
         location: "Remote",
         description: [
-            "Building full-stack applications in React.js, Next.js, FastAPI, and PostgreSQL serving production users",
-            "Designed REST APIs in FastAPI, improving response rate by 15%",
-            "Building CI/CD pipelines with GitHub Actions to automate testing and deployment, cutting release cycle time by 30% and reducing manual errors",
-            "Refactored old React UIs using Redux to decrease loading times by 10%"
+            "Developed Java graph algorithms and AI n8n automations to optimize resource allocation, cutting client infrastructure spend by 30%",
+            "Implemented Apache Kafka queues across Spring microservices to decouple processing and improve distributed system availability",
+            "Deployed concurrent Go data pipelines and GraphQL APIs to ingest and stream real-time financial data feeds",
+            "Partitioned CockroachDB instances using geo-distribution strategies, reducing financial workflow processing latency by 40%"
         ]
     },
     {
-        date: "Nov 2025 - Present",
-        title: "Software Developer (Part Time)",
-        company: "Pomona College: ITS",
-        location: "Claremont",
+        date: "May 2026 - Present",
+        title: "Software Developer",
+        company: "ASPC",
+        location: "Claremont, CA",
         description: [
-            "Designing PostgreSQL schemas and databases for faculty research projects, reducing query lookup time by approximately 25%",
-            "Architected LangChain and n8n workflows to help increase AI agent productivity and decrease hallucination rate",
-            "Developing REST APIs with Spring Boot and Spring MVC and integrating them with React and React Native front ends"
+            "Optimized MongoDB with text and hashed indexes, accelerating NoSQL query execution for course search systems",
+            "Developed scalable TypeScript and Express backend services to reliably support over 2,000 production users",
+            "Integrated AWS SQS message queues to manage transaction concurrency and prevent bottlenecks during high-traffic intervals",
+            "Reduced application latency by 30% through Redis set and write-through caching strategies"
+        ]
+    },
+    {
+        date: "Nov 2025 - Apr 2026",
+        title: "Software Developer",
+        company: "Pomona College: ITS",
+        location: "Claremont, CA",
+        description: [
+            "Optimized PostgreSQL vector similarity searches using pgvector and GIN indexing to minimize retrieval latency for large datasets",
+            "Implemented Redis LRU caching mechanisms to achieve sub-second data loading times and accelerate read throughput",
+            "Deployed a containerized microservice architecture using Kubernetes to test cluster self-healing and system resiliency",
+            "Configured Resilience4j circuit breakers within Spring Cloud to stabilize data streams and mitigate high-traffic spikes",
+            "Built automated CI/CD deployment pipelines to streamline backend service integration and maintain high application uptime"
         ]
     },
     {
         date: "Jan 2025 - Nov 2025",
-        title: "Solutions Developer",
+        title: "Assistant Software Developer",
         company: "Pomona College: Advancement",
-        location: "Claremont",
+        location: "Claremont, CA",
         description: [
-            "Sped up data processing by ~ 20% for donor bundles using Python data workflows.",
-            "Created interactive data visualizations with D3.js, JavaScript, and Tableau, helping co-workers quickly identify donation trends",
-            "Built and designed PostgreSQL schemas to decrease query lookup by 30%"
-        ]
-    },
-    {
-        date: "May 2025 - Aug 2025",
-        title: "Web Development Research Assistant",
-        company: "Pomona College: Security Research Lab",
-        location: "Claremont",
-        description: [
-            "Developed a web site with JavaScript and Tailwind CSS that lets users compare privacy and security labels across similar apps, enabling faster assessment of app privacy",
-            "Created responsive UI using Tailwind CSS that let users easily compare privacy labels, reducing visual clutter",
-            "Set up GitHub Actions CI/CD pipelines, automating builds and tests and cutting development time by several hours each week"
+            "Developed Python ETL pipelines to automate data migration into Salesforce, processing thousands of client records concurrently",
+            "Optimized Python script automation to streamline data processing workflows, reducing manual review overhead by 20%",
+            "Architected relational database schemas using MySQL and PostgreSQL to store and scale over 20,000 donor records",
+            "Indexed database tables to accelerate search query performance and optimize retrieval times for constituent datasets"
         ]
     }
 ];
